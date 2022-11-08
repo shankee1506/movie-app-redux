@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import user from '../../images/user.png';
+import '../header/header.scss';
 
 const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <div className="header">
+    <Link to="/">
+    <div className="logo">Movie App</div>
+  </Link>
 
-export default Header
+      <div className="user-image">
+        <img src={user} alt="user" />
+      </div>
+    </div>
+  );
+};
+
+export default Header;
